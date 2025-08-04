@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
-
-[ -x "$(which oc)" ] && eval "$(oc completion bash)" 
+# shellcheck shell=bash
+# shellcheck disable=SC1090
+_command_exists oc && source <(oc completion bash)
